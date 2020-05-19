@@ -14,7 +14,7 @@ class FeaturedAppsVC: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "zzzz"
-        self.navigationController?.navigationBar.backgroundColor = .red
+        self.navigationController?.navigationBar.backgroundColor = .white
 //        collectionView.backgroundColor = .red
         
         collectionView.register(CategoryCell.self, forCellWithReuseIdentifier: cellID)
@@ -29,7 +29,7 @@ class FeaturedAppsVC: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 40
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
